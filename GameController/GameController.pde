@@ -25,7 +25,7 @@ PShape lifeIcon;
  * this method is built into processing. it is always called one time
  */
 void setup() {
-  size(displayWidth, displayHeight, P2D);
+  fullScreen();
   noCursor();
 
   factory = new ShapeFactory();
@@ -93,11 +93,11 @@ void endGame(String condition) {
 
 /**
  * FULL SCREEN MODE
- */
+
 boolean sketchFullScreen() {
   return true;
 }
-
+ */
 /**
  * SPAWN A NEW PLAYER
  */
@@ -192,26 +192,3 @@ boolean isRightBound(AbstractSprite sprite) {
     return false;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
